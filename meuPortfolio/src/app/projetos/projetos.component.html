@@ -1,6 +1,6 @@
 <h1>Repositórios do GitHub</h1>
-<ul>
-  <li *ngFor="let repo of repositories">
+<mat-grid-list cols="3" rowHeight="5:5">
+  <mat-grid-tile *ngFor="let repo of repositories">
     <!-- <mat-card class="example-card">
       <mat-card-header>
         <mat-card-title-group>
@@ -14,21 +14,16 @@
     </mat-card> -->
     <mat-card class="custom-card">
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title></mat-card-title>
-        <mat-card-subtitle>John Doe</mat-card-subtitle>
+        <mat-card-title><a [href]="repo.html_url">{{repo.name}}</a></mat-card-title>
       </mat-card-header>
       <img mat-card-image src="https://via.placeholder.com/350x150" alt="Imagem de amostra">
       <mat-card-content>
-        <p>
-          Sou um desenvolvedor web apaixonado por criar aplicativos da web interativos e responsivos.
-          Tenho experiência em HTML, CSS, JavaScript, Angular, React e muito mais.
-        </p>
+        <p>{{repo.description}}</p>
+        <mat-card-actions>
+          <button mat-button>Ver Mais</button>
+          <button mat-button><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="">thumb_up</mat-icon></button>
+        </mat-card-actions>
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>Ver Mais</button>
-        <button mat-button>Contato</button>
-      </mat-card-actions>
     </mat-card>
-  </li>
-</ul>
+  </mat-grid-tile>
+</mat-grid-list>
