@@ -1,21 +1,21 @@
     <mat-toolbar color="primary">
-      <img src="" alt="">
+      <img src="../../assets/img/logo Vitor.webp" alt="Logo Vitor Vargem">
       <span routerLink="home" id="titleToolBar">Portfólio Vitor Vargem</span>
       <span class="example-spacer"></span>
       <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="pessoal">
-          <mat-icon>dialpad</mat-icon>
-          <span>Quem sou</span>
-        </button>
         <button mat-menu-item routerLink="home">
-          <mat-icon>voicemail</mat-icon>
+          <mat-icon>home</mat-icon>
           <span>Home Page</span>
         </button>
+        <button mat-menu-item routerLink="pessoal">
+          <mat-icon>help</mat-icon>
+          <span>Quem sou</span>
+        </button>
         <button mat-menu-item routerLink="projetos">
-          <mat-icon></mat-icon>
+          <mat-icon>book</mat-icon>
           <span>Projetos</span>
         </button>
       </mat-menu>

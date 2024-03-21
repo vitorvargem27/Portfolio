@@ -18,8 +18,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { PessoalComponent } from './pessoal/pessoal.component';
-import { ProjetosComponent } from './projetos/projetos.component';
 import { GithubconectService } from './githubconect.service';
 
 @NgModule({
@@ -28,8 +26,6 @@ import { GithubconectService } from './githubconect.service';
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    PessoalComponent,
-    ProjetosComponent
   ],
   imports: [
     BrowserModule,

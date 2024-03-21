@@ -6,7 +6,12 @@
   }
 
 mat-toolbar{
-    background: linear-gradient(to right, $corFundo, $corSecundaria);
+    background: linear-gradient(to top, $corFundo, $corSecundaria);
+
+    img{
+        width: 60px;
+        height: 60px;
+    }
 
     #titleToolBar{
         cursor: pointer;

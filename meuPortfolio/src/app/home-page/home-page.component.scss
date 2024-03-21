@@ -1,6 +1,32 @@
 @import '../app.component.scss';
 
-#container{
-    height: 500px;
-    background-color: white;
+#quemSou {
+    background: linear-gradient(to bottom, $corFundo, $corSecundaria);
+    height: 1000px;
+
+    h1 {
+        padding-top: 20px;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    mat-grid-list {
+        margin-top: 30px;
+
+        mat-grid-tile {
+            height: 200px;
+
+            .example-card {
+                width: 400px;
+                border-radius: 30px;
+
+                #imagemPerfil{
+                    height: 300px;
+                    width: 400px;  
+                }
+            }
+        }
+    }
 }
