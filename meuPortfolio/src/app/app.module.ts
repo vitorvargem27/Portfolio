@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { GithubconectService } from './githubconect.service';
+import { ProjetosComponent } from './projetos/projetos.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { GithubconectService } from './githubconect.service';
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
+    ProjetosComponent,
   ],
   imports: [
     BrowserModule,
